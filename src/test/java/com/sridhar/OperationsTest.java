@@ -1,6 +1,5 @@
 package com.sridhar;
 
-import com.sridhar.modified.CmpClassType;
 import org.junit.Test;
 
 import java.util.HashSet;

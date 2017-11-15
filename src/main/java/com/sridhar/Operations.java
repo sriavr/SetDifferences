@@ -1,8 +1,5 @@
 package com.sridhar;
 
-import com.sridhar.modified.CmpClassA;
-import com.sridhar.modified.CmpClassType;
-
 import java.util.*;
 
 public class Operations {
@@ -37,19 +34,6 @@ public class Operations {
         }
 
         return similarClassTypes;
-    }
-
-    private Set<CmpClassType> transform(Set<ClassType> classTypes) {
-        Set<CmpClassType> cmpClassTypes = new HashSet<>();
-        for(ClassType classType: classTypes){
-            ClassA a = classType.getA();
-            ClassB b = classType.getB();
-
-            CmpClassA cmpClassA = new CmpClassA(a);
-            CmpClassType cmpClassType = new CmpClassType(null, cmpClassA, b);
-            cmpClassTypes.add(cmpClassType);
-        }
-        return cmpClassTypes;
     }
 
     public Set<ClassType> newlyAddedClassTypes(Set<ClassType> oldClassTypes, Set<ClassType> newClassTypes){
